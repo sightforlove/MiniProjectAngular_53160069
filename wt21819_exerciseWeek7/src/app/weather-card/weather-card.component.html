@@ -1,0 +1,11 @@
+<mat-card class="card" *ngIf="weather">
+  <mat-card-content>
+    <mat-card-title>
+      Day {{days}}
+    </mat-card-title>
+    <mat-card-subtitle>{{weather.summary}}</mat-card-subtitle>
+    <p>Temp min/max : {{weather.temperatureMin}} / {{weather.temperatureMax}}</p>
+    <p>Pressure : {{weather.pressure}} psi</p>
+    <p>Humidity : {{weather.humidity}}</p>
+  </mat-card-content>
+</mat-card>
